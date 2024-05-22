@@ -1,0 +1,120 @@
+:root {
+    --border-color: #aaa;
+    --blue-background_1: #25a3f7;
+    --blue-background_2: #86cfff;
+    --white-background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+header {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--blue-background_1);
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    min-width: 340px;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 1rem;
+    background: var(--blue-background_2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.input-box {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--white-background);
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box input {
+    border: none;
+}
+
+.input-box input:focus {
+    outline: none;
+}
+
+.error-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.forgot-password {
+    width: 100%;
+    text-align: right;
+}
+
+.forgot-password a {
+    text-decoration: none;
+}
+
+form button[type=submit] {
+    background: var(--blue-background_1);
+    color: var(--white-background);
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+    border: none;
+    margin-top: 2rem;
+}
